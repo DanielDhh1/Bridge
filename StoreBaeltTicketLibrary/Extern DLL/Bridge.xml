@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bridge</name>
+    </assembly>
+    <members>
+        <member name="T:Bridge.Car">
+            <summary>
+            This the the Car sub class that inherits from the vehicle base class
+            </summary>
+        </member>
+        <member name="M:Bridge.Car.Price">
+            <summary>
+            Calculates the price for the Car to cross the bridge
+            The base price for a Car is 230kr
+            If the Car has a Brobizz discount, a 10% discount is added to base price
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bridge.Car.VehicleType">
+            <summary>
+            Gets the type of vehicle
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Bridge.MC">
+            <summary>
+            This the the MC sub class that inherits from the vehicle base class
+            </summary>
+        </member>
+        <member name="M:Bridge.MC.Price">
+            <summary>
+            Calculates the price for the MC to cross the bridge
+            The base price for a MC is 120kr
+            If the MC has a Brobizz discount, a 10% discount is added to base price
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bridge.MC.VehicleType">
+            <summary>
+            Gets the type of vehicle
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Bridge.Vehicle">
+            <summary>
+            Represents a vechicle object with stored licence plates and date data
+            </summary>
+        </member>
+        <member name="M:Bridge.Vehicle.#ctor(System.String,System.DateTime,System.Boolean)">
+            <summary>
+            Initializes a new instance of a vehicle with attributes
+            </summary>
+            <param name="licensePlate"></param>
+            <param name="date"></param>
+            <param name="brobizz"></param>
+            <exception cref="T:System.ArgumentOutOfRangeException">Thrown if the license plate is longer than 7 characters</exception>
+        </member>
+        <member name="M:Bridge.Vehicle.Price">
+            <summary>
+            Calculates the price for crossing the bridge
+            </summary>
+            <returns>0 has been implemented as deafult</returns>
+        </member>
+        <member name="M:Bridge.Vehicle.VehicleType">
+            <summary>
+            Gets the type of the vehicle
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
